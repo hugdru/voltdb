@@ -23,22 +23,22 @@ domains:
       Number of Replicas to Write: specified in the database configuration
       Writes with Unavailable Replicas: not applicable
       Read from Master Only: not applicable - peer to peer
-      Resolving Write Conflicts: "not applicable: single threaded"
+      Resolving Write Conflicts: not applicable - single threaded
     Query Language:
-      API-based: not suppported
+      API-based: not supported
       Declarative Query Language: supported
       REST/HTTP-based Queries: supported
       Languages Supported: [Java, C#, Python, C/C++, PHP, Ruby, Erlang, Javascript]
-      Cursor-based Queries: not suppported
+      Cursor-based Queries: not supported
       JOIN-style queries: supported
-      Complex Data Types: arrays
+      Complex Data Types: [arrays]
       Restrict Query Result Set Size: supported
       Key Matching Options: [exact, partial match, wildcards]
       Sort Options: [ascending, descending]
-      Triggers: not supported
-      Data Object Expiry: not suppported
+      Triggers: [not supported]
+      Data Object Expiry: not supported
     Data Model:
-      Data model: Relational
+      Data Model: Relational
       Fixed Schema: required
       Opaque Data Objects: not required
       Hierarchical Data Objects: not supported
@@ -54,24 +54,24 @@ domains:
       Replication Architecture: peer-to-peer
       Replication for Backup: supported
       Replication across Data Centers: supported by data center aware features
-      Replica Writes: to multiple replicas
-      Replica Reads: from any replica
+      Replica Writes: [to multiple replicas]
+      Replica Reads: [from any replica]
       Read Repair: not relevant
       Automatic Replica Failure Detection: supported
       Automatic Failover: supported
       Automatic New Master Election after Failure: not relevant
       Replica Recovery and Resynchronization: performed by administrator
     Data Distribution:
-      Data Distribution Architecture: peer-to-peer
+      Data Distribution Architecture: [peer-to-peer]
       Data Distribution Method: hash key
       Automatic Data Rebalancing: [new storage triggered, administrative rebalancing tools]
       Physical Data Distribution: [single cluster, multiple data centers]
       Query Architecture: distributed coordinator for shard key lookup
       Queries using Non-Shard Key Value: [secondary indexes, non-indexed (scan)]
-      Merging Query Results from Multiple Shards: sorted order
+      Merging Query Results from Multiple Shards: [sorted order]
     Security:
       Client Authentication: [custom user/password, Kerberos]
-      Server authentication: Not secured
+      Server Authentication: [not secured]
       Credential Store: external file
       Role Based Security: supported
       Security Role Options: [multiple roles per user, default roles, custom roles]
@@ -81,8 +81,8 @@ domains:
     Admin:
       Configuration Files: single
       Node command line access: non-authenticated
-      Node addition/removal: centralized tool
-      Cluster monitoring: real-time
+      Node addition/removal: [centralized tool]
+      Cluster monitoring: [real-time]
       Dump database configuration: supported
       Database object count: supported
       Physical storage usage: supported

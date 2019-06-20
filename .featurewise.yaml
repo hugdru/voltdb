@@ -72,7 +72,7 @@ domains:
     Security:
       Client Authentication: [custom user/password, Kerberos]
       Server Authentication: [not secured]
-      Credential Store: external file
+      Credential Store: [external file]
       Role Based Security: supported
       Security Role Options: [multiple roles per user, default roles, custom roles]
       Scope of Roles: [cluster, database, collection]

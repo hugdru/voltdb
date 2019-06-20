@@ -77,7 +77,7 @@ domains:
       Security Role Options: [multiple roles per user, default roles, custom roles]
       Scope of Roles: [cluster, database, collection]
       Database Encryption: not supported
-      Logging: configurable event logging
+      Logging: [configurable event logging]
     Admin:
       Configuration Files: single
       Node command line access: non-authenticated

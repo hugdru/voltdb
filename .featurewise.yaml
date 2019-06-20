@@ -23,7 +23,7 @@ domains:
       Number of Replicas to Write: specified in the database configuration
       Writes with Unavailable Replicas: not applicable
       Read from Master Only: not applicable - peer to peer
-      Resolving Write Conflicts: not applicable: single threaded
+      Resolving Write Conflicts: "not applicable: single threaded"
     Query Language:
       API-based: not suppported
       Declarative Query Language: supported

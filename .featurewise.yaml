@@ -63,7 +63,7 @@ domains:
       Replica Recovery and Resynchronization: performed by administrator
     Data Distribution:
       Data Distribution Architecture: [peer-to-peer]
-      Data Distribution Method: hash key
+      Data Distribution Method: [hash key]
       Automatic Data Rebalancing: [new storage triggered, administrative rebalancing tools]
       Physical Data Distribution: [single cluster, multiple data centers]
       Query Architecture: distributed coordinator for shard key lookup

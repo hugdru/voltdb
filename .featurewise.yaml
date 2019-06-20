@@ -1,0 +1,88 @@
+branches:
+  only: master
+  except: master
+  publish: True
+releases: True
+domains:
+- schema:
+    url: https://github.com/hugdru/schemas/blob/master/big_data-schema.yaml
+  data:
+    Scalability:
+      Scalable Distribution Architecture: [horizontal partitioning of database, horizontal partitioning and replication]
+      Scaling Out - Adding Data Storage Capacity: automatic data rebalancing
+      Request Load Balancing: client requests load balanced across coordinators
+      Granularity of Write Locks: no locks - single threaded execution
+      Scalable Request Processing Architecture: fully distributed - any node acts as a coordinator
+    Consistency:
+      Object Level Atomic Updates: supported
+      ACID Transactions: supported
+      Distributed Transactions: not supported
+      Durable Writes: supported
+      Quorum Reads and Writes: not relevant
+      Number of Replicas to Read: not supported
+      Number of Replicas to Write: specified in the database configuration
+      Writes with Unavailable Replicas: not applicable
+      Read from Master Only: not applicable - peer to peer
+      Resolving Write Conflicts: not applicable: single threaded
+    Query Language:
+      API-based: not suppported
+      Declarative Query Language: supported
+      REST/HTTP-based Queries: supported
+      Languages Supported: [Java, C#, Python, C/C++, PHP, Ruby, Erlang, Javascript]
+      Cursor-based Queries: not suppported
+      JOIN-style queries: supported
+      Complex Data Types: arrays
+      Restrict Query Result Set Size: supported
+      Key Matching Options: [exact, partial match, wildcards]
+      Sort Options: [ascending, descending]
+      Triggers: not supported
+      Data Object Expiry: not suppported
+    Data Model:
+      Data model: Relational
+      Fixed Schema: required
+      Opaque Data Objects: not required
+      Hierarchical Data Objects: not supported
+      Automatically allocated Primary Key: not supported
+      Composite Keys: supported
+      Secondary Indexes: supported
+      Query by Key Ranges: supported
+      Query by Partial Keys: supported
+      Query by Non-key Values: supported
+      Map Reduce API: integrated with an external framework
+      Indexed Text Search: not supported
+    Data Replication:
+      Replication Architecture: peer-to-peer
+      Replication for Backup: supported
+      Replication across Data Centers: supported by data center aware features
+      Replica Writes: to multiple replicas
+      Replica Reads: from any replica
+      Read Repair: not relevant
+      Automatic Replica Failure Detection: supported
+      Automatic Failover: supported
+      Automatic New Master Election after Failure: not relevant
+      Replica Recovery and Resynchronization: performed by administrator
+    Data Distribution:
+      Data Distribution Architecture: peer-to-peer
+      Data Distribution Method: hash key
+      Automatic Data Rebalancing: [new storage triggered, administrative rebalancing tools]
+      Physical Data Distribution: [single cluster, multiple data centers]
+      Query Architecture: distributed coordinator for shard key lookup
+      Queries using Non-Shard Key Value: [secondary indexes, non-indexed (scan)]
+      Merging Query Results from Multiple Shards: sorted order
+    Security:
+      Client Authentication: [custom user/password, Kerberos]
+      Server authentication: Not secured
+      Credential Store: external file
+      Role Based Security: supported
+      Security Role Options: [multiple roles per user, default roles, custom roles]
+      Scope of Roles: [cluster, database, collection]
+      Database Encryption: not supported
+      Logging: configurable event logging
+    Admin:
+      Configuration Files: single
+      Node command line access: non-authenticated
+      Node addition/removal: centralized tool
+      Cluster monitoring: real-time
+      Dump database configuration: supported
+      Database object count: supported
+      Physical storage usage: supported
